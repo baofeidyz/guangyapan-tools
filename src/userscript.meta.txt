@@ -1,0 +1,15 @@
+// ==UserScript==
+// @name         光鸭云盘 TMDB 重命名助手
+// @namespace    https://github.com/baofeidyz/guangyapan-tools
+// @version      0.2.0
+// @description  根据 TMDB 剧集数据预览并安全重命名光鸭云盘中的剧集文件
+// @author       baofeidyz
+// @match        https://www.guangyapan.com/*
+// @connect      api.themoviedb.org
+// @connect      api.guangyapan.com
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_xmlhttpRequest
+// @grant        unsafeWindow
+// @run-at       document-start
+// ==/UserScript==

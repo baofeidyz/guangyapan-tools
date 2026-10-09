@@ -1,0 +1,28 @@
+{
+  "headers": ["authorization", "content-type", "did", "dt"],
+  "list": {
+    "method": "POST",
+    "paths": [
+      "/userres/v1/file/get_file_list",
+      "/nd.bizuserres.s/v1/file/get_file_list"
+    ],
+    "bodyKeys": ["orderBy", "pageSize", "parentId", "sortType"]
+  },
+  "detail": {
+    "method": "POST",
+    "paths": [
+      "/userres/v1/file/get_file_detail",
+      "/nd.bizuserres.s/v1/file/get_file_detail"
+    ],
+    "bodyKeys": ["fileId"],
+    "resolutionPath": "data.videoResource[].info.resolution"
+  },
+  "rename": {
+    "method": "POST",
+    "paths": [
+      "/userres/v1/file/rename",
+      "/nd.bizuserres.s/v1/file/rename"
+    ],
+    "bodyKeys": ["fileId", "newName"]
+  }
+}
